@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Movie-details</h2>
+            <p>{{title}}</p>
+            <p>{{genre}}</p>
+            <p>{{plot}}</p>
+            {{#each cast}}
+            <p>{{name}}</p>
+            <a href="/clebrities/{{id}}">Ver detalles</a>
+            {{/each}}
+            <form action="/movies/{{id}}/delete" method="POST" style="display: inline">
+                <input type="submit" value="eliminar">
+            </form>
+            <a href="/movies/{{id}}/edit">Delete</a>
+            <a href="/movies/{{id}}/edit">Edit</a>
+        </div>
+    </div>
+</div>
